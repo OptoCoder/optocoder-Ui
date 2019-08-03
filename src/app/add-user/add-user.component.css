@@ -9,11 +9,11 @@ table {
 }
 
 .search-div{
-  margin: 10px;
+  margin: 2px;
 }
 .search-form-field{
   font-family: Bahnschrift, serif;
-  width: 70%;
+  width: 20%;
   margin-right: 10px;
   padding: 5px  10px;
 }

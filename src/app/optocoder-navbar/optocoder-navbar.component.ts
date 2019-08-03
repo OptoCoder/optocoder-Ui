@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-optocoder-navbar',
+  templateUrl: './optocoder-navbar.component.html',
+  styleUrls: ['./optocoder-navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class OptocoderNavbarComponent implements OnInit {
+  userName: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  snavToggle(snav)
+  {
+    snav.toggle();
   }
 
 }

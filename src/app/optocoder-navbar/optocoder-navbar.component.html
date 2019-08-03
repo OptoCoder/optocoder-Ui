@@ -1,5 +1,7 @@
 <mat-toolbar color="primary" class="navbar">
-  <div>DashBoard</div>
+  <div>OptoCoder</div>
+    <button mat-button aria-label="Toggle sidenav"  mat-icon-button (click)="snavToggle(snav)"></button>
+  
   <mat-menu #appMenu="matMenu" yPosition="above">
     <button mat-menu-item>Change Password</button>
     <button mat-menu-item routerLink="">Logout</button>
@@ -8,6 +10,6 @@
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="appMenu">
-    Ovi Islam
+    userName
   </button>
 </mat-toolbar>

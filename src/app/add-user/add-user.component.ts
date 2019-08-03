@@ -2,11 +2,11 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatTableDataSource} from '@angular/material';
 
 @Component({
-  selector: 'app-member-list',
-  templateUrl: './member-list.component.html',
-  styleUrls: ['./member-list.component.css']
+  selector: 'app-add-user',
+  templateUrl: './add-user.component.html',
+  styleUrls: ['./add-user.component.css']
 })
-export class MemberListComponent implements OnInit {
+export class AddUserComponent implements OnInit {
   displayedColumns: string[] = ['id', 'first_name', 'last_name', 'email', 'dob'];
   searchKey: string;
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

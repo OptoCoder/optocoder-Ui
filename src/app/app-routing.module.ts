@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {LoginComponent} from './login/login.component';
-import {RegistrationComponent} from './registration/registration.component';
-import {DeshboardComponent} from './deshboard/deshboard.component';
 import {ErrorComponent} from './error/error.component';
-import {ChangepasswordComponent} from './changepassword/changepassword.component';
+import { OptocoderLoginComponent } from './optocoder-login/optocoder-login.component';
+import { OptocoderRegistrationComponent } from './optocoder-registration/optocoder-registration.component';
+import { OptocoderDashboardComponent } from './optocoder-dashboard/optocoder-dashboard.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
-  {path: 'registration', component: RegistrationComponent},
-  {path: 'dashboard', component: DeshboardComponent},
-  {path: 'change-password', component: ChangepasswordComponent},
+  {path: '', component: OptocoderLoginComponent},
+  {path: 'registration', component: OptocoderRegistrationComponent},
+  {path: 'dashboard', component: OptocoderDashboardComponent},
+  {path: 'addUser', component: AddUserComponent},
   {path: '**', component: ErrorComponent},
 ];
 
