@@ -2,14 +2,23 @@
   <div>OptoCoder</div>
     <button mat-button aria-label="Toggle sidenav"  mat-icon-button (click)="snavToggle(snav)"></button>
   
+    <mat-menu #appMenu="matMenu" yPosition="above">
+        <button mat-menu-item>See Notification
+            <i class="material-icons"> notifications_paused </i>
+        </button> 
+      
+      </mat-menu>
+
   <mat-menu #appMenu="matMenu" yPosition="above">
     <button mat-menu-item>Change Password</button>
-    <button mat-menu-item routerLink="">Logout</button>
+    <button mat-menu-item routerLink="">Logout
+
+    </button>
 
 
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="appMenu">
-    userName
+    <i class="material-icons"> account_box </i>
   </button>
 </mat-toolbar>
