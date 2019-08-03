@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="navbar">
+  <div>DashBoard</div>
+  <mat-menu #appMenu="matMenu" yPosition="above">
+    <button mat-menu-item>Change Password</button>
+    <button mat-menu-item routerLink="">Logout</button>
+
+
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="appMenu">
+    Ovi Islam
+  </button>
+</mat-toolbar>

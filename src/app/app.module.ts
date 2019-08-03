@@ -1,14 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OptocoderDashboardComponent } from './optocoder-dashboard/optocoder-dashboard.component';
-import { OptocoderSidebarComponent } from './optocoder-sidebar/optocoder-sidebar.component';
-import { OptocoderNavbarComponent } from './optocoder-navbar/optocoder-navbar.component';
-import { OptocoderRegistrationComponent } from './optocoder-registration/optocoder-registration.component';
-import { OptocoderLoginComponent } from './optocoder-login/optocoder-login.component';
-import { AddUserComponent } from './add-user/add-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatAutocompleteModule, MatBadgeModule,
@@ -46,6 +39,15 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
+import { LoginComponent } from './login/login.component';
+import {CommonModule} from '@angular/common';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { RegistrationComponent } from './registration/registration.component';
+import { DeshboardComponent } from './deshboard/deshboard.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { ErrorComponent } from './error/error.component';
+import {AppRoutingModule} from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {CdkTreeModule} from '@angular/cdk/tree';
@@ -53,22 +55,25 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import {A11yModule} from '@angular/cdk/a11y';
 import {PortalModule} from '@angular/cdk/portal';
-import { CommonModule } from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { MemberComponent } from './member/member.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    OptocoderDashboardComponent,
-    OptocoderSidebarComponent,
-    OptocoderNavbarComponent,
-    OptocoderRegistrationComponent,
-    OptocoderLoginComponent,
-    AddUserComponent
+    LoginComponent,
+    RegistrationComponent,
+    DeshboardComponent,
+    ChangepasswordComponent,
+    ErrorComponent,
+    NavbarComponent,
+    SidebarComponent,
+    MemberListComponent,
+    MemberComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     FormsModule,
     AppRoutingModule,
     BrowserModule,

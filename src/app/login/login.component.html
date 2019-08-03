@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div class="login-content">
+    <mat-toolbar class="login-toolbar" color="">User Portal <i class="material-icons">
+      account_box
+    </i></mat-toolbar>
+    <mat-card>
+      <form [formGroup]="">
+        <mat-form-field>
+          <mat-icon matPrefix>person_outline</mat-icon>
+          <input autofocus type="text" matInput placeholder="Username" >
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-icon matPrefix>lock_outline</mat-icon>
+          <input type="password" autocomplete="false" matInput placeholder="Password">
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="primary">Login</button>
+        <p align="center" ><a mat-raised-button routerLink="/dashboard">Go to Dashboard </a></p>
+        <p align="center">Are you new here? <a routerLink="/registration">Register Now</a></p>
+
+      </form>
+    </mat-card>
+  </div>
+</div>
